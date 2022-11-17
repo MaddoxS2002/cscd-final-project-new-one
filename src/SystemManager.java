@@ -1,8 +1,5 @@
 public class SystemManager {
 
-<<<<<<< HEAD
-
-=======
     public Airport createAirport(final String n){
         return null;
     }
@@ -29,6 +26,5 @@ public class SystemManager {
     public void displaySystemDetails(){
 
     }
->>>>>>> main
 
 }
