@@ -1,2 +1,4 @@
-public class Airline {
+public enum Airline {
+
+
 }

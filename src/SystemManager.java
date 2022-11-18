@@ -24,7 +24,7 @@ public class SystemManager {
 
     }
     public void displaySystemDetails(){
-
+        System.out.println();
     }
 
 }

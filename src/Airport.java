@@ -5,7 +5,10 @@ public enum Airport {
     private String name;
 
     Airport(final String name){
-
+        if(name == null|| name.isEmpty()){
+            throw new IllegalArgumentException();
+        }
+        this.name = name;
     }
 
 }//end of class
