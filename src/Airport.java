@@ -1,4 +1,4 @@
-public enum Airport {
+/*public enum Airport {
 
     DEN("DEN"), DFW("DFW"), LON("LON");
 
@@ -12,3 +12,13 @@ public enum Airport {
     }
 
 }//end of class
+*/
+public class Airport{
+
+    private String name;
+
+    public Airport(String name){
+        this.name = name;
+    }
+
+}

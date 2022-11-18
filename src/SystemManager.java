@@ -1,13 +1,18 @@
 public class SystemManager {
 
     public Airport createAirport(final String n){
-
-        return null;
+        Airport airport = new Airport(n);
+        return airport;
     }
 
     public Airline createAirline(final String n){
+        if(n.equals("Delta"))
+            return Airline.DELTA;
 
-        return null;
+        if(n.equals("Amer"))
+            return Airline.AMERICAN;
+
+        return Airline.FRONTIER;
     }
 
     public Flight createFlight(final String aname,final String orig,final String dest,final int year,final int month,final int day,final String id){
