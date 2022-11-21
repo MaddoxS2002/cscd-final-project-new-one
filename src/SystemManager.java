@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class SystemManager {
 
-    ArrayList<Airport> airports;
+    ArrayList<Airport> Airports;
 
     public Airport createAirport(final String n){
         if(n.equals("DEN")){
@@ -14,14 +14,23 @@ public class SystemManager {
         return Airport.LON;
     }
 
-    public Airline createAirline(final String n){
-        if(n.equals("Delta"))
-            return Airline.DELTA;
+    public void createAirline(final String n){
+        if(n.equals("DELTA"))
+           for(Airport A : Airports){
+               A.addToAirlines(Airline.DELTA);
+           }
 
-        else if(n.equals("Amer"))
-            return Airline.AMERICAN;
+        else if(n.equals("AMER")){
+            for(Airport A: Airports){
+                A.addToAirlines(Airline.AMERICAN);
+            }
+        }
+        else if(n.equals("FRONT")){
+            for(Airport A: Airports){
+                A.addToAirlines(Airline.FRONTIER);
+            }
+        }
 
-        return Airline.FRONTIER;
     }
 
     public Flight createFlight(final String aname,final String orig,final String dest,final int year,final int month,final int day,final String id){
