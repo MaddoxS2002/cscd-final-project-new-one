@@ -4,6 +4,7 @@ public class Flight{
 
     private ArrayList<SeatClass> sections; //only one section of a particular seat class eg only 1 business or econ class
     private int numOfSec = 0;//number of sections
+    private String seatClassName;
     /*
     public Flight(String section,final SeatClass sc){
         if(numOfSec > 3 || numOfSec < 0)

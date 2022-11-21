@@ -1,4 +1,4 @@
-/*public enum Airport {
+public enum Airport {
 
     DEN("DEN"), DFW("DFW"), LON("LON");
 
@@ -12,13 +12,16 @@
     }
 
 }//end of class
-*/
-public class Airport{
 
+/*public class Airport{
     private String name;
 
-    public Airport(String name){
+    Airport(final String name){
+        if(name == null|| name.isEmpty()){
+            throw new IllegalArgumentException();
+        }
         this.name = name;
     }
 
-}
+
+}*/

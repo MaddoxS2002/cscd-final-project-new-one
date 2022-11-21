@@ -1,15 +1,20 @@
 public class SystemManager {
 
     public Airport createAirport(final String n){
-        Airport airport = new Airport(n);
-        return airport;
+        if(n.equals("DEN")){
+            return Airport.DEN;
+        }
+        else if(n.equals("DFW")){
+            return Airport.DFW;
+        }
+        return Airport.LON;
     }
 
     public Airline createAirline(final String n){
         if(n.equals("Delta"))
             return Airline.DELTA;
 
-        if(n.equals("Amer"))
+        else if(n.equals("Amer"))
             return Airline.AMERICAN;
 
         return Airline.FRONTIER;
