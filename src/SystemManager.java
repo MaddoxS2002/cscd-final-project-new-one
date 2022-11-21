@@ -1,4 +1,8 @@
+import java.util.ArrayList;
+
 public class SystemManager {
+
+    ArrayList<Airport> airports;
 
     public Airport createAirport(final String n){
         if(n.equals("DEN")){
@@ -22,7 +26,7 @@ public class SystemManager {
 
     public Flight createFlight(final String aname,final String orig,final String dest,final int year,final int month,final int day,final String id){
 
-        return null;
+        return new Flight(aname, orig, dest, year, month, day, id);
     }
 
     public FlightSection createSection(final String air,final String flID,final int rows,final int cols,final SeatClass s){
